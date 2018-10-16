@@ -20,7 +20,7 @@ The main pipeline is implemented in the plot_lanes() funcion, and consists of 6 
 
 5. Find the lane lines - *detect_lanes()* function. 
 
-This step was implemented inside the detect_lanes() function. First, it uses the hough transform algorithm to find some set of lines that can be draw from the edges found. 
+This step was implemented inside the detect_lanes() function. First, it uses the hough transform algorithm to find some set of lines that can be drawn from the edges found. 
 
 <img src="/result-pipeline/hough_lines.gif" width="480" alt="Combined Image" />
 
