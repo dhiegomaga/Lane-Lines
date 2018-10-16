@@ -6,19 +6,19 @@
 
 The main pipeline is implemented in the plot_lanes() funcion, and consists of 6 main steps: 
 
-1. Turn image into grayscale for simplicity. 
+1. __Turn image into grayscale__, for simplicity. 
 
-2. Blur the image, to remove some of the noise. 
+2. __Blur the image__ to remove some of the noise. 
 
-3. Apply the Canny edge detector algorithm
+3. Apply the __Canny Edge Detector__ algorithm, to find image pixels considered edges. 
 
 <img src="/result-pipeline/canny.gif" width="480" alt="Combined Image" />
 
-4. Mask the detected edges for left and right lanes, using a polygon for parameters for the mask. 
+4. __Mask the detected edges for left and right lanes__, using a polygon for parameters for the mask. 
 
 <img src="/result-pipeline/mask.gif" width="480" alt="Combined Image" />
 
-5. Find the lane lines - *detect_lanes()* function. 
+5. __Find the lane lines__ - *detect_lanes()* function. 
 
 This step was implemented inside the detect_lanes() function. First, it uses the hough transform algorithm to find some set of lines that can be drawn from the edges found. 
 
@@ -32,7 +32,7 @@ Finally, the resulting lines are fit to parameters A and B, given y = Ax + B. Li
 
 This process is repeated for left and right lanes. 
 
-6. The lanes are plotted onto the image using a weighted sum function of images. 
+6. __The lanes are plotted onto the image__ using a weighted sum function of images. 
 
 <img src="/result-pipeline/result_challenge.gif" width="480" alt="Combined Image" />
 
