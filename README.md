@@ -10,7 +10,7 @@ This repo contains a proposed pipeline for detecting lane lines from video captu
 
 Set Up and Testing
 ---
-The python code uses the following libraries: __numpy, matplotlib, cv2, scipy.optimize, moviepy.editor and IPython.display. __
+The python code uses the following libraries: __numpy, matplotlib, cv2, scipy.optimize, moviepy.editor and IPython.display.__
 
 Experiments were carried on images and video. *test_images/* folder contains images for test, and the results are saved in *test_images_output/*. The videos are in *test_videos/*, and the output in *test_videos_output/*. 
 
